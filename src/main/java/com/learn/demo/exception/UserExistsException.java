@@ -1,4 +1,4 @@
-package com.learn.exception;
+package com.learn.demo.exception;
 
 public class UserExistsException extends RuntimeException {
     public UserExistsException() {

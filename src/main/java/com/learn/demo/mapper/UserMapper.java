@@ -1,6 +1,6 @@
-package com.learn.mapper;
+package com.learn.demo.mapper;
 
-import com.learn.entity.User;
+import com.learn.demo.entity.User;
 import tk.mybatis.mapper.common.Mapper;
 
 public interface UserMapper extends Mapper<User> {

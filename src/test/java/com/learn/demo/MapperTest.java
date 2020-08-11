@@ -1,7 +1,7 @@
-package com.learn;
+package com.learn.demo;
 
-import com.learn.entity.User;
-import com.learn.mapper.UserMapper;
+import com.learn.demo.entity.User;
+import com.learn.demo.mapper.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
-package com.learn.controller;
+package com.learn.demo.controller;
 
-import com.learn.entity.User;
-import com.learn.model.ResbBody;
-import com.learn.service.UserService;
+import com.learn.demo.model.ResbBody;
+import com.learn.demo.service.UserService;
+import com.learn.demo.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +12,12 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    public ResbBody insert(@RequestBody User user){
+        return userService.LoginUser(user);
+    }
 
     /*@RequestMapping(value = "/register",method = RequestMethod.POST)
     public ResbBody register(@RequestBody User user){
@@ -32,8 +38,8 @@ public class UserController {
     }*/
 
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/register",method = RequestMethod.POST)
     public ResbBody login(@RequestBody User user){
-        return userService.insertUser(user);
+        return userService.InsertUser(user);
     }
 }

@@ -1,4 +1,4 @@
-package com.learn.model;
+package com.learn.demo.model;
 
 /**
  * 状态码
