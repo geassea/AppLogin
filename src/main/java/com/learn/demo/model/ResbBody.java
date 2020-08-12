@@ -14,6 +14,11 @@ public class ResbBody<T> {
     public ResbBody() {}
 
 
+    public ResbBody(String statuscode, String message) {
+        this.statuscode = statuscode;
+        this.message = message;
+    }
+
     public ResbBody(String statuscode, String message, T data) {
         this.statuscode = statuscode;
         this.message = message;

@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
     /**
      * 登录
      * @param user
-     * @return
+     * @return 状态码
      * @throws RuntimeException
      */
     public ResbBody LoginUser(User user) throws RuntimeException {
@@ -64,7 +64,6 @@ public class UserServiceImpl implements UserService {
         resbBody.setData(" ");
         return resbBody;
     }
-
 
 
 }
